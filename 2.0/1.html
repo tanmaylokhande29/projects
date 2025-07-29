@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz - Learn Programming Languages</title>
+    <link rel="stylesheet" href="1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>CodeQuiz 🧠</h1>
+        <div id="language-selection">
+            <label for="language-select">Choose a language:</label>
+            <select id="language-select">
+                <option value="Python">Python</option>
+                <option value="C">C</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C++">C++</option>
+
+            </select>
+            <button id="start-quiz-btn">Start Quiz</button>
+        </div>
+
+        <div id="loading-indicator" class="hidden">
+            <p>Generating questions with AI... Please wait!</p>
+            <div class="spinner"></div>
+        </div>
+
+        <div id="quiz-container" class="hidden">
+            <h2 id="question-text">Question goes here</h2>
+            <div id="options-container" class="options">
+
+            </div>
+            <button id="next-button" class="hidden">Next</button>
+        </div>
+
+        <div id="score-card" class="hidden">
+            <h2>Quiz Complete!</h2>
+            <p>You scored: <span id="final-score"></span> / <span id="total-questions"></span></p>
+            <button id="retake-quiz-btn">Retake Quiz</button>
+            <button id="change-language-btn">Change Language</button>
+        </div>
+    </div>
+
+    <script type="module" src="1.js"></script>
+</body>
+</html>
